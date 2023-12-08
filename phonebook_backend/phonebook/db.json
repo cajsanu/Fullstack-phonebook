@@ -1,0 +1,29 @@
+{
+  "persons": [
+    {
+      "name": "Cajsa",
+      "number": "404",
+      "id": 1
+    },
+    {
+      "name": "Secret lover",
+      "number": "666",
+      "id": 6
+    },
+    {
+      "name": "Saschku",
+      "number": "10/10",
+      "id": 7
+    },
+    {
+      "name": "Benjamin",
+      "number": "900",
+      "id": 9
+    },
+    {
+      "name": "Melvin",
+      "number": "111",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+.error {
+    color: red;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: rgb(0, 170, 255);
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.field {
+    padding: 5px;
+}
+
+h2 {
+    color: blue;
+    font: italic;
+}
+
+button {
+    background-color: rgb(251, 0, 255);
+    color: rgb(225, 127, 255);
+}
+
+button:hover {
+    color: rgb(0, 208, 255);
+}
+
+ul {
+    width: 27%;
+}
+
+li {
+    color: rgb(4, 91, 62);
+}
+
+li:hover {
+    color: white;
+    background-color: blueviolet;
+}
+
+form {
+    color: blueviolet;
+}
