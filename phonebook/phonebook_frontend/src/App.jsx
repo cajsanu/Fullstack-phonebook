@@ -61,6 +61,7 @@ const App = () => {
           setTimeout(() => {
             setNotification(null)
           }, 5000)
+          getPersons()
         })
       setNewName("")
       setNewNumber("")
@@ -96,6 +97,8 @@ const App = () => {
         .deletePerson(person.id)
         .then(getPersons)
   }
+
+  console.log("persons", persons)
 
 
   return (
