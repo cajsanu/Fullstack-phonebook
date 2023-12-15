@@ -18,8 +18,8 @@ POST http://localhost:3002/api/persons
 Content-Type: application/json
 
 {
-    "name": "Cunt",
-    "number": "00"
+    "name": "",
+    "number": ""
 }
 
 
