@@ -61,7 +61,6 @@ app.post('/api/persons', (request, response) => {
 
     Person.find({ name: request.body.name })
         .then(result => {
-            console.log("name is here", result)
             if (result.length > 0) {
                 return response.status(400).json({
                     error: "Name already exists"
@@ -86,7 +85,6 @@ app.put('/api/persons/:id', (request, response, next) => {
     }
     Person.findByIdAndUpdate(request.params.id, numberUpdate, {new: true})
     .then(result => {
-        console.log("res", result)
         response.json(result)
     })
     .catch(error => next(error))
