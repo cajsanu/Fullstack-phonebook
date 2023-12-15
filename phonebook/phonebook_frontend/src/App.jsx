@@ -45,11 +45,11 @@ const App = () => {
             }, 5000)
             setPersons(persons.map(p => p.name !== newName ? p : newObject))
           })
-          .catch(error => {setErrorMessage("The preson has already been removed")})
-          setTimeout(() => {
-            setErrorMessage(null)
-            getPersons
-          }, 5000)
+          .catch(error => { setErrorMessage("The preson has already been removed") })
+        setTimeout(() => {
+          setErrorMessage(null)
+          getPersons
+        }, 5000)
       }
     } else {
       const newPerson = { name: newName, number: newNumber }
@@ -63,9 +63,9 @@ const App = () => {
           }, 5000)
           getPersons()
         })
-      setNewName("")
-      setNewNumber("")
     }
+    setNewName("")
+    setNewNumber("")
   }
 
 
@@ -92,13 +92,11 @@ const App = () => {
   }
 
   const handleDelete = (person) => {
-    if (window.confirm(`Are yopu sure you want to delete ${person.name}`))
+    if (window.confirm(`Are you sure you want to delete ${person.name}`))
       personRequests
         .deletePerson(person.id)
         .then(getPersons)
   }
-
-  console.log("persons", persons)
 
 
   return (
