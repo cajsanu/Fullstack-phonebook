@@ -45,7 +45,9 @@ const App = () => {
             }, 5000)
             setPersons(persons.map(p => p.name !== newName ? p : newObject))
           })
-          .catch(error => { setErrorMessage("The preson has already been removed") })
+          .catch(error => { 
+            setErrorMessage(error.response.data.error) 
+          })
         setTimeout(() => {
           setErrorMessage(null)
           getPersons
@@ -63,6 +65,12 @@ const App = () => {
           }, 5000)
           getPersons()
         })
+        .catch(error => {
+          setErrorMessage(error.response.data.error)
+        })
+        setTimeout(() => {
+          setErrorMessage(null)
+        }, 5000);
     }
     setNewName("")
     setNewNumber("")
